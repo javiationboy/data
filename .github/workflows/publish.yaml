@@ -1,0 +1,61 @@
+name: Publish
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+      - uses: ./.github/actions/codecheck
+  push:
+    runs-on: ubuntu-latest
+    needs:
+      - check
+    permissions:
+      contents: read
+      packages: write
+    environment:
+      name: production
+      url: https://data.vatsim-radar.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Add .env file
+#        run: echo "${{ secrets.ENV }}" > .env
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          tags: ghcr.io/vatsim-radar/data/production:latest
+          context: .
+          push: true
+          file: Dockerfile
+
+  deploy-app:
+    runs-on: ubuntu-latest
+    needs:
+      - push
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up kubectl
+        uses: matootie/dokube@v1.4.1
+        with:
+          personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
+          clusterName: main
+      - name: Deploy App
+        run: kubectl apply -f app.yml
+      - name: Apply App
+        run: kubectl rollout restart deployment data

@@ -1,0 +1,72 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data
+spec:
+  progressDeadlineSeconds: 360
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: data
+    spec:
+      containers:
+        - name: data
+          image: ghcr.io/vatsim-radar/data/production
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: 50m
+              memory: 100Mi
+            limits:
+              cpu: 950m
+              memory: 950Mi
+          readinessProbe:
+            tcpSocket:
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 15
+            successThreshold: 1
+            failureThreshold: 10
+            timeoutSeconds: 15
+          volumeMounts:
+            - name: radar-data
+              mountPath: /radar/data
+      imagePullSecrets:
+        - name: ghcr-login-secret
+      nodeSelector:
+        doks.digitalocean.com/node-pool: basic-1
+      volumes:
+        - name: radar-data
+          persistentVolumeClaim:
+            claimName: radar-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: data
+spec:
+  ports:
+    - port: 3000
+  selector:
+    app: data
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: radar-data
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: do-block-storage

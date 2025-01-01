@@ -1,0 +1,12 @@
+name: 'Codecheck'
+description: 'Perform lint and build of project'
+
+runs:
+  using: composite
+  steps:
+    - name: Install deps
+      shell: sh
+      run: yarn install
+    - name: Build package
+      shell: sh
+      run: yarn build

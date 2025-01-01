@@ -22,7 +22,9 @@ export default defineNitroPlugin(() => {
                 callsign: string
                 country: string
             }[]
-        }>(`https://gng.aero-nav.com/AERONAV/icao_airlines?action=get&oper=grid&_search=false&nd=${Date.now()}&rows=10000&page=1&sidx=icao&sord=asc`)
+        }>(`https://gng.aero-nav.com/AERONAV/icao_airlines?action=get&oper=grid&_search=false&nd=${Date.now()}&rows=10000&page=1&sidx=icao&sord=asc`, {
+            responseType: 'json'
+        })
 
         writeFileSync(filePath, JSON.stringify({
             date: new Date().toISOString(),
@@ -56,7 +58,9 @@ export default defineNitroPlugin(() => {
                 rl_exists: string
                 in_use: string
             }[]
-        }>(`https://gng.aero-nav.com/AERONAV/icao_fhairlines?action=get&oper=grid&_search=false&nd=${Date.now()}&rows=10000&page=1&sidx=icao&sord=asc`)
+        }>(`https://gng.aero-nav.com/AERONAV/icao_fhairlines?action=get&oper=grid&_search=false&nd=${Date.now()}&rows=10000&page=1&sidx=icao&sord=asc`, {
+            responseType: 'json'
+        })
 
         writeFileSync(filePath, JSON.stringify({
             date: new Date().toISOString(),
