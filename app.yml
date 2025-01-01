@@ -47,7 +47,7 @@ spec:
       volumes:
         - name: radar-data
           persistentVolumeClaim:
-            claimName: radar-data-project
+            claimName: radar-data
 ---
 apiVersion: v1
 kind: Service
@@ -62,7 +62,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: radar-data-project
+  name: radar-data
 spec:
   accessModes:
     - ReadWriteOnce
