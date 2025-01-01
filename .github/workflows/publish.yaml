@@ -59,3 +59,5 @@ jobs:
         run: kubectl apply -f app.yml
       - name: Apply App
         run: kubectl rollout restart deployment data
+      - name: Verify App
+        run: kubectl rollout status deployment data
