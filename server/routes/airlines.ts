@@ -1,12 +1,12 @@
 import {useRuntimeConfig} from "nitropack/runtime";
 import {readFileSync} from "node:fs";
 import {join} from "path";
-import {dataDirectory} from "~~/utils";
+import {customDataDirectory, dataDirectory} from "~~/utils";
 
 export default defineCachedEventHandler(async (event) => {
     const airlines = JSON.parse(readFileSync(join(dataDirectory, 'airlines.json'), 'utf-8')).list
     let virtualAirlines = JSON.parse(readFileSync(join(dataDirectory, 'virtual-airlines.json'), 'utf-8')).list
-    const customList = JSON.parse(readFileSync(join(dataDirectory, 'custom-list.json'), 'utf-8'))
+    const customList = JSON.parse(readFileSync(join(customDataDirectory, 'airlines.json'), 'utf-8'))
 
     virtualAirlines = virtualAirlines.filter(x => !airlines.some(y => x.icao === y.icao));
 

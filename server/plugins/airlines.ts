@@ -1,16 +1,16 @@
 import {defineCronJob} from "../../utils/cron";
-import {readFileSync, writeFileSync} from "node:fs";
+import {writeFileSync} from "node:fs";
 import {join} from "path";
-import {dataDirectory} from "~~/utils";
+import {dataDirectory, readFileOrFail} from "~~/utils";
 
 export default defineNitroPlugin(() => {
     defineCronJob('0 0 * * *', async () => {
         const filePath = join(dataDirectory, 'airlines.json')
-        const file = JSON.parse(readFileSync(filePath, 'utf-8'))
+        const file = JSON.parse(readFileOrFail(filePath, 'utf-8') ?? '{}')
 
         const fileDate = new Date(file.date).getTime()
 
-        if (Date.now() - fileDate < 1000 * 60 * 60 * 24 * 32) return;
+        if (file.date && Date.now() - fileDate < 1000 * 60 * 60 * 24 * 32) return;
 
         const airlines = await $fetch<{
             records: number
@@ -40,11 +40,11 @@ export default defineNitroPlugin(() => {
 
     defineCronJob('0 0 * * *', async () => {
         const filePath = join(dataDirectory, 'virtual-airlines.json')
-        const file = JSON.parse(readFileSync(filePath, 'utf-8'))
+        const file = JSON.parse(readFileOrFail(filePath, 'utf-8') ?? '{}')
 
         const fileDate = new Date(file.date).getTime()
 
-        if (Date.now() - fileDate < 1000 * 60 * 60 * 24 * 32) return;
+        if (file.date && Date.now() - fileDate < 1000 * 60 * 60 * 24 * 32) return;
 
         const airlines = await $fetch<{
             records: number

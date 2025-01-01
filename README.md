@@ -16,5 +16,5 @@ https://data.vatsim-radar.com/airlines
 
 Source: https://gng.aero-nav.com/
 
-- When making a PR, use /data/custom-list.json to propose your changes
+- When making a PR, use /custom-data/airlines.json to propose your changes
 - Other files in data are auto-generated
