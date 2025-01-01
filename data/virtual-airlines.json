@@ -1,0 +1,12 @@
+{
+  "date": "1970-01-01T00:00:00.000Z",
+  "list": [
+    {
+      "icao": "WAT",
+      "callsign": "WALKER",
+      "name": "Walker Air Transport",
+      "country": "UNITED STATES",
+      "virtual": true
+    }
+  ]
+}
