@@ -19,12 +19,5 @@
     "callsign":"SUNRISE",
     "country":"GERMANY",
     "virtual":true
-  },
-  {
-    "icao":"MCA",
-    "name":"MUENCHEN AIRCARGO",
-    "callsign":"MUENCHEN AIRCARGO",
-    "country":"GERMANY",
-    "virtual":true
   }
 ]
