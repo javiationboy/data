@@ -18,3 +18,5 @@ Source: https://gng.aero-nav.com/
 
 - When making a PR, use /custom-data/airlines.json to propose your changes
 - Other files in data are auto-generated
+
+Data updates within 7 days after merge.
