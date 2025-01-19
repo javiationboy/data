@@ -20,7 +20,6 @@ export default defineNitroPlugin(() => {
                 icao: string
                 airline: string
                 callsign: string
-                country: string
             }[]
         }>(`https://gng.aero-nav.com/AERONAV/icao_airlines?action=get&oper=grid&_search=false&nd=${Date.now()}&rows=10000&page=1&sidx=icao&sord=asc`, {
             responseType: 'json'
@@ -32,7 +31,6 @@ export default defineNitroPlugin(() => {
                 icao: x.icao,
                 name: x.airline,
                 callsign: x.callsign,
-                country: x.country,
                 virtual: false,
             }))
         }), 'utf-8')
@@ -68,7 +66,6 @@ export default defineNitroPlugin(() => {
                 icao: x.icao,
                 name: x.airline,
                 callsign: x.callsign,
-                country: x.country,
                 virtual: true,
             }))
         }), 'utf-8')

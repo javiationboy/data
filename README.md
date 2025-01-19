@@ -7,7 +7,6 @@ interface RadarDataAirline {
     icao: string
     name: string
     callsign: string
-    country: string
     virtual: boolean
 }
 ```

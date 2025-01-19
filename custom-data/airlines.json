@@ -3,21 +3,18 @@
     "icao": "SBI",
     "name": "S7 AIRLINES",
     "callsign": "SIBERIAN AIRLINES",
-    "country": "RUSSIAN FEDERATION",
     "virtual": false
   },
   {
     "icao":"MUC",
     "name":"MUENCHEN AIRWAYS",
     "callsign":"MUENCHEN AIRWAYS",
-    "country":"GERMANY",
     "virtual":true
   },
   {
     "icao":"SUN",
     "name":"SUNRISE",
     "callsign":"SUNRISE",
-    "country":"GERMANY",
     "virtual":true
   }
 ]

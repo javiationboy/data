@@ -37,8 +37,8 @@ body:
     id: what
     attributes:
       label: Describe proposed change
-      description: "Include what needs to be changed or added: name, callsign, or country"
-      placeholder: "ICAO: SBI, Name: S7 Airlines, Callsign: Siberian, Country: Russian Federation"
+      description: "Include what needs to be changed or added: name, or callsign"
+      placeholder: "ICAO: SBI, Name: S7 Airlines, Callsign: Siberian"
     validations:
       required: true
   - type: textarea
