@@ -1030,7 +1030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.10.3":
+"@types/node@npm:*, @types/node@npm:^22.10.7":
   version: 22.10.7
   resolution: "@types/node@npm:22.10.7"
   dependencies:
@@ -4515,7 +4515,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vatsim-radar-data@workspace:."
   dependencies:
-    "@types/node": "npm:^22.10.3"
+    "@types/node": "npm:^22.10.7"
     croner: "npm:^9.0.0"
     nitropack: "npm:^2.10.4"
   languageName: unknown
