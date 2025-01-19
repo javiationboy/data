@@ -16,5 +16,11 @@
     "name":"SUNRISE",
     "callsign":"SUNRISE",
     "virtual":true
+  },
+  {
+    "icao": "BHE",
+    "name": "Virtual Crane Airlines",
+    "callsign": "White Crane",
+    "virtual": true
   }
 ]
