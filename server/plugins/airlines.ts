@@ -62,7 +62,7 @@ export default defineNitroPlugin(() => {
 
         writeFileSync(filePath, JSON.stringify({
             date: new Date().toISOString(),
-            list: airlines.rows.filter(x => !x.rl_exists).map(x => ({
+            list: airlines.rows.map(x => ({
                 icao: x.icao,
                 name: x.airline,
                 callsign: x.callsign,
