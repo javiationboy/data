@@ -11,7 +11,8 @@ interface RadarDataAirline {
 }
 ```
 
-https://data.vatsim-radar.com/airlines
+- https://data.vatsim-radar.com/airlines
+- https://data.vatsim-radar.com/airlines/all
 
 Source: https://gng.aero-nav.com/
 
