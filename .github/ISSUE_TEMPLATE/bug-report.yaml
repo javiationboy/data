@@ -9,6 +9,8 @@ body:
         Hello! Thank you for reporting an issue in VATSIM Radar Data.
         
         Before reporting, please also check existing issues in this repository - you can filter them by "airline" label (also check closed ones).
+
+        Trying to make VA to show on VR via remarks? Add it to custom-data, or to https://gng.aero-nav.com/AERONAV/icao_fhairlines
   - type: input
     id: id
     attributes:
