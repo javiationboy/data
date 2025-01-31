@@ -29,10 +29,4 @@
     "callsign": "NIGHT DOG",
     "virtual": true
   },
-{
-    "icao": "UNO",
-    "name": "United Nations",
-    "callsign": "United Nations",
-    "virtual": false
-  },
 ]
