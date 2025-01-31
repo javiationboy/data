@@ -22,5 +22,17 @@
     "name": "Virtual Crane Airlines",
     "callsign": "White Crane",
     "virtual": true
-  }
+  },
+{
+    "icao": "NOG",
+    "name": "NIGHT AIR CARGO",
+    "callsign": "NIGHT DOG",
+    "virtual": true
+  },
+{
+    "icao": "UNO",
+    "name": "United Nations",
+    "callsign": "United Nations",
+    "virtual": false
+  },
 ]
