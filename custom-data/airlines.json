@@ -28,5 +28,41 @@
     "name": "NIGHT AIR CARGO",
     "callsign": "NIGHT DOG",
     "virtual": true
+  },
+  {
+    "icao": "TVS",
+    "name": "SW VIRTUAL",
+    "callsign": "SKYTRAVEL",
+    "virtual": true
+  },
+  {
+    "icao": "TVQ",
+    "name": "SW VIRTUAL",
+    "callsign": "SLOVAKTRAVEL",
+    "virtual": true
+  },
+  {
+    "icao": "TVP",
+    "name": "SW VIRTUAL",
+    "callsign": "JETTRAVEL",
+    "virtual": true
+  },
+  {
+    "icao": "TVL",
+    "name": "SW VIRTUAL",
+    "callsign": "TRAVELSERVICE",
+    "virtual": true
+  },
+  {
+    "icao": "UGJ",
+    "name": "SW VIRTUAL",
+    "callsign": "UNIJET",
+    "virtual": true
+  },
+  {
+    "icao": "CSA",
+    "name": "SW VIRTUAL",
+    "callsign": "CSA-LINES",
+    "virtual": true
   }
 ]
