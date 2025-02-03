@@ -65,4 +65,22 @@
     "callsign": "CSA-LINES",
     "virtual": true
   }
+  {
+    "icao": "FIN",
+    "name": "VIRTUAL FINNAIR",
+    "callsign": "FINNAIR",
+    "virtual": true
+  }
+  {
+    "icao": "NGB",
+    "name": "VIRTUAL FINNAIR",
+    "callsign": "NORDIC GLOBAL",
+    "virtual": true
+  }
+  {
+    "icao": "FCM",
+    "name": "VIRTUAL FINNAIR",
+    "callsign": "FINNCOMM",
+    "virtual": true
+  }
 ]
