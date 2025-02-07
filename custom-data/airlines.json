@@ -82,5 +82,11 @@
     "name": "VIRTUAL FINNAIR",
     "callsign": "FINNCOMM",
     "virtual": true
+  },
+  {
+    "icao": "SMX",
+    "name": "SPECIAL MISSIONS AIR",
+    "callsign": "SMOKE",
+    "virtual": true
   }
 ]
