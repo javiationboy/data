@@ -54,6 +54,12 @@
     "virtual": true
   },
   {
+    "icao": "JRR",
+    "name": "JERRYAIR",
+    "callsign": "JERRY",
+    "virtual": true
+  },
+  {
     "icao": "UGJ",
     "name": "SW VIRTUAL",
     "callsign": "UNIJET",
