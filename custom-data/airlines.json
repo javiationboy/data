@@ -84,6 +84,18 @@
     "virtual": true
   },
   {
+    "icao": "EDW",
+    "name": "EDELWEISS VIRTUAL",
+    "callsign": "EDELWEISS",
+    "virtual": true
+  },
+  {
+    "icao": "SWR",
+    "name": "EDELWEISS VIRTUAL",
+    "callsign": "SWISS",
+    "virtual": true
+  },
+  {
     "icao": "FCM",
     "name": "VIRTUAL FINNAIR",
     "callsign": "FINNCOMM",
