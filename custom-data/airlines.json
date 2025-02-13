@@ -5,6 +5,12 @@
     "callsign": "SIBERIAN AIRLINES",
     "virtual": false
   },
+   {
+    "icao":"BRU",
+    "name":"Belavia",
+    "callsign":"Belavia",
+    "virtual":true
+  },
   {
     "icao":"MUC",
     "name":"MUENCHEN AIRWAYS",
