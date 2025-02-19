@@ -112,5 +112,11 @@
     "name": "SPECIAL MISSIONS AIR",
     "callsign": "SMOKE",
     "virtual": true
+  },
+  {
+    "icao": "PFL",
+    "name": "Proflight Virtual Airlines",
+    "callsign": "PROFLIGHT",
+    "virtual": true
   }
 ]
