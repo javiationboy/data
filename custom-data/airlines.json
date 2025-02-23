@@ -124,5 +124,11 @@
     "name": "vEXS",
     "callsign": "CHANNEX",
     "virtual": true
+  },
+  {
+    "icao": "WTB",
+    "name": "Air Württemberg",
+    "callsign": "EMBERG",
+    "virtual": true
   }
 ]
