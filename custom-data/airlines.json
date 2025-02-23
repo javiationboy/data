@@ -112,5 +112,11 @@
     "name": "SPECIAL MISSIONS AIR",
     "callsign": "SMOKE",
     "virtual": true
+  },
+  {
+    "icao": "EXS",
+    "name": "vEXS",
+    "callsign": "CHANNEX",
+    "virtual": true
   }
 ]
