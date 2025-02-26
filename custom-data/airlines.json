@@ -130,5 +130,23 @@
     "name": "Air Württemberg",
     "callsign": "EMBERG",
     "virtual": true
-  }
+  },
+  {
+    "icao": "CLX",
+    "name": "vCLX.org",
+    "callsign": "Cargolux",
+    "virtual": true
+    },
+  {
+    "icao": "ICV",
+    "name": "vCLX.org",
+    "callsign": "Cargolux Italia",
+    "virtual": true
+    },
+  {
+    "icao": "LGL",
+    "name": "vCLX.org",
+    "callsign": "Luxair",
+    "virtual": true
+    }  
 ]
