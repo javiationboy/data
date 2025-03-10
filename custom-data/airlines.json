@@ -130,5 +130,17 @@
     "name": "Air Württemberg",
     "callsign": "EMBERG",
     "virtual": true
+  },
+  {
+    "icao": "WYB",
+    "name": "WYBEAIR",
+    "callsign": "WYBEAIR",
+    "virtual": true
+  },
+  {
+    "icao": "WYC",
+    "name": "WYBEAIR",
+    "callsign": "FORKLIFT",
+    "virtual": true
   }
 ]
