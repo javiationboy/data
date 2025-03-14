@@ -133,19 +133,19 @@
   },
   {
     "icao": "CLX",
-    "name": "vCLX.org",
+    "name": "vCLX",
     "callsign": "Cargolux",
     "virtual": true
   },
   {
     "icao": "ICV",
-    "name": "vCLX.org",
+    "name": "vCLX",
     "callsign": "Cargolux Italia",
     "virtual": true
   },
   {
     "icao": "LGL",
-    "name": "vCLX.org",
+    "name": "vCLX",
     "callsign": "Luxair",
     "virtual": true
   },
