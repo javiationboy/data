@@ -132,6 +132,24 @@
     "virtual": true
   },
   {
+    "icao": "CLX",
+    "name": "vCLX",
+    "callsign": "Cargolux",
+    "virtual": true
+  },
+  {
+    "icao": "ICV",
+    "name": "vCLX",
+    "callsign": "Cargolux Italia",
+    "virtual": true
+  },
+  {
+    "icao": "LGL",
+    "name": "vCLX",
+    "callsign": "Luxair",
+    "virtual": true
+  },
+  {
     "icao": "WYB",
     "name": "WYBEAIR",
     "callsign": "WYBEAIR",
