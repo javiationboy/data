@@ -134,7 +134,7 @@
   {
     "icao": "UAE",
     "name": "Emirates Virtual",
-    "callsign:" "EMIRATES",
+    "callsign": "EMIRATES",
     "virtual": true
   }
 ]
