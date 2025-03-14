@@ -142,5 +142,17 @@
     "name": "WYBEAIR",
     "callsign": "FORKLIFT",
     "virtual": true
+  },
+  {
+    "icao": "CDF",
+    "name": "Jakauma Airlines",
+    "callsign": "FUNCTION",
+    "virtual": true
+  },
+  {
+    "icao": "UAE",
+    "name": "Emirates Virtual",
+    "callsign": "EMIRATES",
+    "virtual": true
   }
 ]
