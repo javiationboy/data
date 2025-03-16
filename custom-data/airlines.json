@@ -172,5 +172,10 @@
     "name": "Emirates Virtual",
     "callsign": "EMIRATES",
     "virtual": true
-  }
+  },
+  {
+    "icao": "FNQ",
+    "name": "Far North Air",
+    "callsign": "FAR NORTH",
+    "virtual": true
 ]
