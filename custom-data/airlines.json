@@ -178,5 +178,17 @@
     "name": "Far North Air",
     "callsign": "FAR NORTH",
     "virtual": true
+  },
+  {
+    "icao": "FDB",
+    "name": "vFDB",
+    "callsign": "SKYDUBAI",
+    "virtual": true
+  },
+  {
+    "icao": "JBU",
+    "name": "vJBU",
+    "callsign": "JetBlue",
+    "virtual": true
   }
 ]
