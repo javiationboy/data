@@ -181,13 +181,13 @@
   },
   {
     "icao": "FDB",
-    "name": "FlyDubai",
+    "name": "vFDB",
     "callsign": "SKYDUBAI",
     "virtual": true
   },
   {
     "icao": "JBU",
-    "name": "JetBlue",
+    "name": "vJBU",
     "callsign": "JetBlue",
     "virtual": true
   }
